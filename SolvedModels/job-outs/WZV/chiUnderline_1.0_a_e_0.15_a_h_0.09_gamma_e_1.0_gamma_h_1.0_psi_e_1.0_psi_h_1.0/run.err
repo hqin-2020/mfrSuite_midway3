@@ -1,0 +1,10 @@
+/home/hqin/.local/lib/python3.8/site-packages/mfr/modelSoln/modelClass.py:706: UserWarning:
+
+Model solution failed to converge with explicit scheme. We suggest that you reduce the time step size of the inner loop (dtInner) to 4.7e-06.
+
+Traceback (most recent call last):
+  File "/project/lhansen/mfrSuite_midway3/SolvedModels/run_mfrSuite.py", line 142, in <module>
+    testModel.computeStatDent()
+  File "/home/hqin/.local/lib/python3.8/site-packages/mfr/modelSoln/modelClass.py", line 1884, in computeStatDent
+    raise Exception('Model is not solved. Cannot compute stationary density.')
+Exception: Model is not solved. Cannot compute stationary density.

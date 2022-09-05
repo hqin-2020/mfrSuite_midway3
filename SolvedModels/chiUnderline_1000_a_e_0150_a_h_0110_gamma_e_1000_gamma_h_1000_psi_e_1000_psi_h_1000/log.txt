@@ -1,0 +1,30 @@
+Finished resizing sigmaK, sigmaQ, sigmaR
+Finished setting sigmaK, sigmaQ, sigmaR to zero
+Finished creating empty matrices
+Start to run program. Run name: chiUnderline_1000_a_e_0150_a_h_0110_gamma_e_1000_gamma_h_1000_psi_e_1000_psi_h_1000
+Computing for error
+Updating value functions
+
+========================= Iteration: 0 =============================
+First iteration: no error information.
+Households allowed to hold capital, use kappa = w or the preloaded solution as guess.
+Households are allowed to hold capital - need to solve for kappa. Inner tolerance: 1e-05
+Experts are either not allowed to isuse equity or the constraint binds always, setting chi to constraint everywhere
+Inner loop is completed; time elapsed: 1142.01; took 52316 iterations.
+Finished computing derivs
+Finished updating equilibrium quantities. Next step: update matrices.
+Finished updating matrix.
+Finished updating the known vector.
+Solving systems using the implicit scheme via CG...
+Running conjugate gradient solver using 1 threads.
+CG error tolerance: 1e-07
+Factorizing preconditioners. Note that preconditioenrs are factorized every 1 iteration(s).
+Conjugate gradient (preconditioned) took 6001 (experts) and 6001 (households) iterations.
+Solved linear systems.
+Iteration 0 is completed; time elapsed: 1207.96; time spent on solving linear systems (or computing matrix vector product in explicit scheme): 65.7557
+Computing for error
+Updating value functions
+
+=========================================================
+END OF ITERATIONS: VALUE FUNCTIONS CONTAIN NAN OR INF VALUES
+=========================================================
