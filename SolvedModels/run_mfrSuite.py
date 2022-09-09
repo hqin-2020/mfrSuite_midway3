@@ -1,6 +1,9 @@
 import mfr.modelSoln as m
 import numpy as np
 import argparse
+import time
+import os
+import json
 
 parser = argparse.ArgumentParser(description="parameter settings")
 parser.add_argument("--nV",type=int,default=30)
@@ -123,11 +126,17 @@ testModel = m.Model(params)
 #------------------------------------------#
 
 #### This step is very simple: use the .solve() method.
+start = time.time()
 testModel.solve()
 testModel.printInfo() ## This step is optional: it prints out information regarding time, number of iterations, etc.
 testModel.printParams() ## This step is optional: it prints out the parameteres used.
+end = time.time()
+solve_time = '{:.4f}'.format((end - start)/60)
+MFR_time_info = {'solve_time': solve_time}
 
-
+with open(os.getcwd()+"/" + folder_name + "/MFR_time_info.json", "w") as f:
+    json.dump(MFR_time_info,f)
+    
 testModel.dumpData()
 
 
