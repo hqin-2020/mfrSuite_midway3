@@ -131,14 +131,11 @@ testModel.solve()
 testModel.printInfo() ## This step is optional: it prints out information regarding time, number of iterations, etc.
 testModel.printParams() ## This step is optional: it prints out the parameteres used.
 end = time.time()
+testModel.dumpData()
 solve_time = '{:.4f}'.format((end - start)/60)
 MFR_time_info = {'solve_time': solve_time}
-
 with open(os.getcwd()+"/" + folder_name + "/MFR_time_info.json", "w") as f:
     json.dump(MFR_time_info,f)
-    
-testModel.dumpData()
-
 
 # %%
 
